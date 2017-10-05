@@ -1,5 +1,5 @@
 {
-  "name": "ts-template",
+  "name": "react-redux-saga-ts-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlekseyChepurko/ts.git"
+    "url": "git+https://github.com/AlekseyChepurko/react-redux-saga-ts-boilerplate.git"
   },
   "author": "Aleksei Chepurko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlekseyChepurko/ts/issues"
+    "url": "https://github.com/AlekseyChepurko/react-redux-saga-ts-boilerplate/issues"
   },
-  "homepage": "https://github.com/AlekseyChepurko/ts#readme",
+  "homepage": "https://github.com/AlekseyChepurko/react-redux-saga-ts-boilerplate#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
