@@ -37,7 +37,7 @@ module.exports = {
     rules,
   },
   resolve: {
-    extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx'],
+    extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx', '.tsx', '.ts'],
     alias: {
       Common: path.resolve(__dirname, 'source/components/Common'),
       DuckModules: path.resolve(__dirname, 'source/ducks/modules'),

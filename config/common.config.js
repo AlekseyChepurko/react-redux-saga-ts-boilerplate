@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
 
 module.exports = function (options) {
   const { buildPath, imgPath, iconPath, sourcePath } = options;
@@ -42,6 +43,7 @@ module.exports = function (options) {
         context: sourcePath,
       },
     }),
+    new TsConfigPathsPlugin(),
   ];
 
   const rules = [
@@ -51,6 +53,11 @@ module.exports = function (options) {
       use: [
         'babel-loader',
       ],
+    },
+    {
+      test: /\.tsx?$/,
+      exclude: /node_modules/,
+      use: ['awesome-typescript-loader'],
     },
     {
       test: /\.svg$/,
