@@ -24,9 +24,8 @@ export default function Reducer(state = initialState, action) {
 }
 
 
-export const getYourData = (payload) => ({
+export const getYourData = () => ({
   type: GET_DATA,
-  payload,
 });
 
 const getYourDataFulfilled = (payload) => ({
