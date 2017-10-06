@@ -8,7 +8,7 @@
     "start": "webpack-dev-server",
     "prebuild": "rimraf ./build",
     "build": "webpack -p",
-    "lint": "eslint ./source",
+    "lint": "eslint ./source && tslint --project ./",
     "lint-fix": "eslint ./source --fix"
   },
   "repository": {
